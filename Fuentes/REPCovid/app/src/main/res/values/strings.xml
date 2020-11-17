@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">REPCovid</string>
+    <string name="nombre_login">Nombre</string>
+    <string name="pass_login">Contraseña</string>
+    <string name="ingresar_login">Ingresar</string>
+    <string name="titleToolbar">Consulta Médica COVID19</string>
 </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:background="@color/colorPrimaryDark"
+    android:minHeight="?attr/actionBarSize"
+    app:popupTheme="@style/Theme.AppCompat.Light"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/ic_coronavirus"
+            android:layout_width="@dimen/ancho_imagen_toolbar"
+            android:layout_height="@dimen/ancho_imagen_toolbar"></ImageView>
+        <TextView
+            android:id="@+id/title_toolbar_txt"
+            android:text="@string/titleToolbar"
+            android:textSize="@dimen/tamanio_title_toolbar"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center">
+        </TextView>
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_general">20dp</dimen>
+    <dimen name="tamanioTextLogin">40sp</dimen>
+    <dimen name="marginTopLogin">100dp</dimen>
+    <dimen name="tamanioButtonLogin">30sp</dimen>
+    <dimen name="sizeEditText">30sp</dimen>
+    <dimen name="ancho_imagen_toolbar">60dp</dimen>
+    <dimen name="margin_left_title">30dp</dimen>
+    <dimen name="tamanio_title_toolbar">20sp</dimen>
+</resources>
