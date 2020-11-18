@@ -9,6 +9,7 @@
     android:padding="@dimen/padding_general"
     android:background="@color/colorPrimary">
     <TextView
+        android:textStyle="bold"
         android:textColor="@color/icons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,13 +18,16 @@
         android:textSize="@dimen/tamanioTextLogin"
         android:layout_marginTop="@dimen/marginTopLogin"></TextView>
     <EditText
+        android:layout_marginTop="@dimen/marginTopForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/icons"
         android:inputType="text"
         android:textSize="@dimen/sizeEditText"
-        android:id="@+id/nombreLogin"></EditText>
+        android:id="@+id/nombreLogin"
+        android:maxLength="10"></EditText>
     <TextView
+        android:textStyle="bold"
         android:textColor="@color/icons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,15 +36,17 @@
         android:textSize="@dimen/tamanioTextLogin"
         android:layout_marginTop="@dimen/marginTopLogin"></TextView>
     <EditText
+        android:layout_marginTop="@dimen/marginTopForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/icons"
         android:inputType="textPassword"
         android:textSize="@dimen/sizeEditText"
-        android:id="@+id/passLogin"></EditText>
+        android:id="@+id/passLogin"
+        android:maxLength="4"></EditText>
 <Button
     android:layout_marginTop="@dimen/marginTopLogin"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/ingresar_login"
     android:layout_gravity="center"

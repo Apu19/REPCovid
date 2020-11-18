@@ -8,4 +8,8 @@
     <dimen name="ancho_imagen_toolbar">60dp</dimen>
     <dimen name="margin_left_title">30dp</dimen>
     <dimen name="tamanio_title_toolbar">20sp</dimen>
+    <dimen name="margen_boton_float">100dp</dimen>
+    <dimen name="tamanioTextForm">23sp</dimen>
+    <dimen name="marginTopForm">20dp</dimen>
+    <dimen name="tamanioEditTextForm">20sp</dimen>
 </resources>
