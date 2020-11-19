@@ -12,4 +12,6 @@
     <dimen name="tamanioTextForm">23sp</dimen>
     <dimen name="marginTopForm">20dp</dimen>
     <dimen name="tamanioEditTextForm">20sp</dimen>
+    <dimen name="marginTopList">10dp</dimen>
+    <dimen name="tamnioLetraList">30sp</dimen>
 </resources>

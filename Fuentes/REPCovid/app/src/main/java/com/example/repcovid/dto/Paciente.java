@@ -10,7 +10,7 @@ public class Paciente implements Serializable {
     private String fechaExamen;
     private String areaTrabajo;
     private boolean sintomas;
-    private int temperatura;
+    private float temperatura;
     private boolean tos;
     private int presionArterial;
 
@@ -70,11 +70,11 @@ public class Paciente implements Serializable {
         this.sintomas = sintomas;
     }
 
-    public int getTemperatura() {
+    public float getTemperatura() {
         return temperatura;
     }
 
-    public void setTemperatura(int temperatura) {
+    public void setTemperatura(float temperatura) {
         this.temperatura = temperatura;
     }
 

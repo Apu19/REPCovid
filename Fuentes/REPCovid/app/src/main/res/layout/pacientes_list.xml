@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rutList"
+        android:textSize="@dimen/tamnioLetraList"></TextView>
+    <TextView
+        android:textSize="@dimen/tamnioLetraList"
+        android:layout_marginTop="@dimen/marginTopList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre_apellido_list"></TextView>
+    <TextView
+        android:textSize="@dimen/tamnioLetraList"
+        android:layout_marginTop="@dimen/marginTopList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fechaList"></TextView>
+    <ImageView
+        android:layout_marginTop="@dimen/marginTopList"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgList"></ImageView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopList"></Space>
+</LinearLayout>

@@ -14,13 +14,18 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Switch;
+import android.widget.Toast;
+
+import com.example.repcovid.dao.PacientesDAODB;
+import com.example.repcovid.dto.Paciente;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
+
 public class RegistrarPaciente extends AppCompatActivity {
+    private PacientesDAODB pacientesDAO = new PacientesDAODB(this);
     private EditText rut, nombre, apellido, fecha, temperatura, presion;
     private Switch sintoma, tos;
     private Spinner areaTrabajo;
@@ -128,6 +133,17 @@ public class RegistrarPaciente extends AppCompatActivity {
                     }
                 }
                 if (errores.isEmpty()) {
+                    Paciente p = new Paciente();
+                    p.setRut(rut.getText().toString().trim());
+                    p.setNombre(nombre.getText().toString().trim());
+                    p.setApellido(apellido.getText().toString().trim());
+                    p.setFechaExamen(fechaPaciente);
+                    p.setAreaTrabajo(areaTrabajoTxt);
+                    p.setSintomas(sintoma.isChecked());
+                    p.setTemperatura(temp);
+                    p.setTos(tos.isChecked());
+                    p.setPresionArterial(presionArterial);
+                    pacientesDAO.add(p);
                     Intent intent = new Intent(RegistrarPaciente.this, ActivityPrincipal.class);
                     startActivity(intent);
                 } else {
