@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Nombre:"
+            android:text="Nombre"
             android:textSize="30sp"
             android:textStyle="bold"></TextView>
 
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Fecha examen:"
+            android:text="Fecha examen"
             android:textSize="30sp"
             android:textStyle="bold"></TextView>
 
@@ -90,7 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Area de trabajo:"
+            android:text="Area de trabajo"
             android:textSize="30sp"
             android:textStyle="bold"></TextView>
 
@@ -113,7 +113,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sintomas:"
+            android:text="Sintomas"
             android:textSize="30sp"
             android:textStyle="bold"></TextView>
 
@@ -136,7 +136,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Tos:"
+            android:text="Tos"
             android:textSize="30sp"
             android:textStyle="bold"></TextView>
 
@@ -159,7 +159,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Temperatura:"
+            android:text="Temperatura"
             android:textSize="30sp"
             android:textStyle="bold"></TextView>
 
@@ -182,7 +182,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Presión Arterial:"
+            android:text="Presión Arterial"
             android:textSize="30sp"
             android:textStyle="bold"></TextView>
 
