@@ -14,7 +14,7 @@ public class PacientesDBOpenHelper extends SQLiteOpenHelper {
             "fecha TEXT," +
             "areaTrabajo TEXT," +
             "sintomas BOOLEAN," +
-            "temperatura REAL," +
+            "temperatura FLOAT," +
             "tos BOOLEAN," +
             "presion INTEGER)";
     public PacientesDBOpenHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {

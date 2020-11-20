@@ -47,6 +47,7 @@ public class PacientesDAODB implements PacientesDAO{
                         p.setSintomas(Boolean.parseBoolean(c.getString(6)));
                         p.setTemperatura(c.getFloat(7));
                         p.setTos(Boolean.parseBoolean(c.getString(8)));
+                        p.setPresionArterial(c.getInt(9));
                         pacientes.add(p);
                     } while (c.moveToNext());
                 }

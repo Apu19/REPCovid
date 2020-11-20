@@ -132,6 +132,7 @@ public class RegistrarPaciente extends AppCompatActivity {
                         errores.add("La presión debe ser mayor a 0");
                     }
                 }
+
                 if (errores.isEmpty()) {
                     Paciente p = new Paciente();
                     p.setRut(rut.getText().toString().trim());

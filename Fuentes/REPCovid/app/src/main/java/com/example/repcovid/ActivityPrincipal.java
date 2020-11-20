@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
 import com.example.repcovid.adapters.PacientesListAdapter;
 import com.example.repcovid.dao.PacientesDAO;
 import com.example.repcovid.dao.PacientesDAODB;
@@ -23,22 +24,24 @@ public class ActivityPrincipal extends AppCompatActivity {
     private PacientesDAO pacientesDAO = new PacientesDAODB(this);
     private ListView pacientesLv;
     private PacientesListAdapter adapter;
-    protected void onResume(){
+
+    protected void onResume() {
         super.onResume();
-        this.pacientes= this.pacientesDAO.getAll();
+        this.pacientes = this.pacientesDAO.getAll();
         this.pacientesLv = findViewById(R.id.listaMA);
-        this.adapter = new PacientesListAdapter(this,R.layout.pacientes_list,this.pacientes);
+        this.adapter = new PacientesListAdapter(this, R.layout.pacientes_list, this.pacientes);
         this.pacientesLv.setAdapter(this.adapter);
         this.pacientesLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Paciente paciente = pacientes.get(i);
-                Intent intent = new Intent(ActivityPrincipal.this,VerPaciente.class);
-                intent.putExtra("paciente",paciente);
+                Intent intent = new Intent(ActivityPrincipal.this, VerPaciente.class);
+                intent.putExtra("paciente", paciente);
                 startActivity(intent);
             }
         });
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

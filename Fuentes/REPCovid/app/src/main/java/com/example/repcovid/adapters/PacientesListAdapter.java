@@ -34,10 +34,8 @@ public class PacientesListAdapter extends ArrayAdapter<Paciente> {
         rut.setText(actual.getRut());
         nombreCompleto.setText(actual.getNombre() + " " + actual.getApellido());
         fecha.setText(actual.getFechaExamen());
-        if(actual.isSintomas()){
+        if (actual.isSintomas()) {
             img.setImageResource(R.drawable.ic_baseline_warning_24);
-        }else{
-
         }
         return fila;
     }
